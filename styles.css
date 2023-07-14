@@ -61,7 +61,6 @@ section {
     color: black;
     display: flex;
     flex-direction: column;
-    height: 100vh;
 }
 
 #welcome-section h1 {
