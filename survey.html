@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- David Puente Jr.
+
+6/11/2023, CIS133DA
+
+Project 1: Build a survey form -->
+
+<title>What is your favorite small dog breed?</title>
+
+<header>
+    
+    <div>
+      <h1 id="title">What is your favorite small dog breed?</h1>
+    </div>
+
+</header>
+
+<link rel="stylesheet" href="styles.css">
+
+
+
+<p id="description">Thank you for taking the time to share your favorite small dog breed</p>
+<!-- My choice in survey -Small dogs -->
+<form id="survey-form">
+  <div class="input-element">
+    <label id="name-label">
+      Name
+    </label> 
+    <input placeholder="name" id="name" type="text" required>
+  </div>
+  <div class="input-element">
+    <label id="email-label">
+      Email
+    </label> 
+    <input placeholder="email" id="email" type="email" required>
+  </div>
+  <div class="input-element">
+    <label id="number-label">
+      Age
+    </label> <!-- Added min and max age to input -->
+    <input placeholder="age" id="number" min="4" max="110" type="number" required>
+  </div>
+  <div class="input-element">
+    <label id="select-label">
+      What your favorit dog breed?
+    </label> 
+    <!-- Gave folks boxes to make their choices -->
+    <select id="dropdown">
+      <option>Chihuahua
+      <option>Beagle
+      <option>Terrier
+      <option>Bull Dog
+      <option>Corgi
+      <option>Other</option>
+    </select>
+  </div>
+  
+    
+    <fieldset>
+      <div class="input-element">
+        <label>Have you owned more than one small dog before?</label>
+        <!-- Have they owned a small dog before yes no response -->
+        </div>
+        <div>
+        <label><input type="radio" name="small dog" value="yes">Yes</label>    
+        </div>
+        <div>
+        <label><input type="radio" name="small dog" value="no">No</label>
+        </div>
+    </fieldset>
+    <div class="input-element">
+    <label>What type of coat do you perfer on your small dog?</label>
+    </div>
+    <div>
+      <!-- Gave folks the option to choose hair type -->
+    <label><input type="checkbox" name="coat" value="smooth">Smooth Coat</label>    
+    </div>
+    <div>
+    <label><input type="checkbox" name="coat" value="long">Long Coat</label>
+    </div>
+    <div>
+    <label><input type="checkbox" name="coat" value="wire">Wire Coat</label>    
+    </div>
+    <div>
+    <label><input type="checkbox" name="coat" value="curly">Curly Coat</label>
+    </div>
+    <div>
+    <label><input type="checkbox" name="coat" value="double">Double Coated</label>
+    </div>
+    <div class="input-element">
+      <label>Additional comments</label>
+      <!-- Added a comments area for folks to add additional thoughts -->
+      <textarea class="text"></textarea>
+    </div>
+    <button type="submit" id="submit">
+      Submit
+    </button>
+    
+    
+</form>  
+</body>
+</html>
